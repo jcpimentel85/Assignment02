@@ -23,10 +23,9 @@ let coinFlip = Math.round(Math.random())
 let choice= prompt("Select Heads or Tails").toLowerCase()
 console.log(coinFlip)
 console.log(choice)
-//console.log (choice = "Heads")
-console.log (choice == "heads")
-console.log (choice === "heads")
+
 // Nested Conditional Statements
+// Added a validation in case they enter something different to Heads or Tails
 if ( choice == "heads" || choice == "tails") {
     if (coinFlip >= 1) { 
         if ( choice == "heads") {document.write(`The flip was heads and you chose heads...you win`)
