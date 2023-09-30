@@ -9,15 +9,18 @@
 //If the score is between 90 and 100, write out “You received an A” into the console.
 //If the score is less than 60, write out “You received an F” into the console.
 
+//Create variables and prompt
 let varScore = prompt("Enter your score")
 let varGrade
+//Conditional statement to find the correct Grade
 if (varScore < 60){ varGrade = "F"
     } else if( varScore >= 60 &&  varScore <=69) { varGrade = "D"
     } else if( varScore >= 70 &&  varScore <=79) { varGrade = "C"
     } else if( varScore >= 80 &&  varScore <=89) { varGrade = "B"
     } else if ( varScore >= 90 &&  varScore <=100) { varGrade = "A"
     } else console.log("Error in the Matrix, Only numbers between 1 and 100 are accepted")
-     
+
+//display the console message using a switch based on the Grade
 switch (varGrade) {
     case "A" : console.log("You received an A") 
     break
